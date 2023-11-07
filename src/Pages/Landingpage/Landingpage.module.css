@@ -1,0 +1,269 @@
+:root{
+  --background: #F9F7FD; 
+  --type1:#667085;
+  --type2:#515251;
+}
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+  font-family: Millik;
+  src: url('../../LocalFont/Millik.ttf');
+}
+@font-face {
+  font-family: Nunito1; 
+  src: url('../../LocalFont/Nunito-Italic-VariableFont_wght.ttf');
+}
+@font-face {
+  font-family: Nunito2;
+  src: url('../../LocalFont/Nunito-VariableFont_wght.ttf');
+}
+
+.body{
+  width: 100%; 
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Nunito2;
+}
+.main{
+  max-width: 1216px;
+}
+h1, h2, h3, h4, h5, h6{
+  color: #101828;
+}
+.header{
+  background-image: url('../../Images/Hero-Background.png');
+  width: 100%;
+  height: auto;
+  max-width: 1216px;
+  padding-top: 5rem;
+}
+.header h1{
+  font-family: Millik;
+  font-size: 96px;
+  /* line-height: 100px; */
+  font-family: Nunito2;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #140A29;
+  font-weight: 700;
+  width: 500px;
+  line-height: 6rem;
+}
+.header h1 span{
+  /* font-family: Nunito2; */
+  letter-spacing: -0.02em;
+  color: #6938EF;
+}
+.header p{
+  font-family: Nunito2;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: -0.015em;
+  text-align: left;
+}
+.header #SignUp {
+  padding: 16px 28px 16px 28px;
+  border-radius: 8px;
+  background-color: #7F56D9;
+}
+.groupbtns{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+.demo{
+  padding: 16px 28px;
+  background-color: white;
+  border: 1px solid #D0D5DD;
+  color: #344054;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+.signUp{
+  padding: 16px 28px;
+  background-color: #7F56D9;
+  border: 1px solid #7F56D9;
+  color: white;
+  border-radius: 8px;
+  margin-left: 12px;
+  font-size: 18px;
+}
+.headerImg{
+  width: 600px;
+  height: 600px;
+
+}
+.headerImg img{
+  object-fit: cover;
+  width: 100%;
+  overflow: hidden;
+}
+.brand{
+  width: 100%;
+  max-width: 1216px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  margin: 96px 0;
+}
+.brand p{
+  text-align: center;
+  color: #667085;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px; 
+}
+.BrandsContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .reconLgAcct{
+  text-align: center;
+  width: 768px;
+  padding-bottom: 74px;
+}
+.main .reconLgAcct h3{
+  font-size: 36px;
+  font-weight: 700;
+  padding: 0 90px;
+}
+.main .reconLgAcct p{
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: var(--type1);
+}
+.section4{
+  width: 100%;
+  background-image: url('../../Images/GroupedBackground.png');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 42px 128px;
+}
+.section4 .main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* gap: 32px; */
+}
+.section4 .main h3,
+.section5 h3{
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: -0.72px;
+  text-transform: lowercase;
+  padding: 0 20rem;
+  text-align: center;
+}
+.section4 .appForYouContent{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  padding:32px;
+}
+.section4 .appForYouContent div{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 405px;
+  padding: 0 4rem;
+}
+.section5{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 64px 0;
+}
+.section5 .resonForRecon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 54px 0;
+  gap: 106px;
+}
+.section5 .resonForReonContents{
+  position: relative;
+  max-width: 360px;
+}
+.section5 .resonForReonContents label{
+  display: flex;
+  width: 64px;
+  height: 64px;
+  padding: 16px 33px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 16px;
+  background: #E0CCFF;
+  color: #7F56D9;
+  font-size: 36px;
+  font-weight:700;
+  margin-bottom: 16px;
+}
+.section5 .resonForReonContents .label1{
+  background-color: #7F56D9;
+  color: white;
+}
+.section5 .resonForReonContents .label2,
+.section5 .resonForReonContents .label3{
+  margin-top: 60px;
+}
+.section5 .resonForReonContents .label4{
+  margin-top: 50px;
+}
+
+.section5 .resonForReonContents h6{
+  font-size: 20px;
+  font-weight: 500;
+  color: #515251;
+}
+.section5 .resonForReonContents p{
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #515251;
+}
+.section5 .resonForReonContents .Image1{
+  position: absolute;
+  top: 30px;
+  left: -2.5rem;
+  width: 36px;
+  height: 209px;
+  /* flex-shrink: 0; */
+}
+.section5 .resonForReonContents .Image2{
+  position: absolute;
+  right: -10px;
+  top: 14rem;
+}
+.section5 .resonForReonContents .Image3{
+  position: absolute;
+  bottom: 9rem;
+  left: -2.5rem;
+  width: 36px;
+  height: 209px;
+}
+.resonForReonContentsImg img{
+  width: 620px;
+  height: 620px;
+}
