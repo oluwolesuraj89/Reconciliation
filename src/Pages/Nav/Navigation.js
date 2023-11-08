@@ -1,10 +1,17 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { NavLink } from 'react-router-dom';
 import classNamees from '../Nav/Nav.module.css';
 import Logo from '../../Images/Logo.png';
 import classes from '../Nav/Nav.module.css';
+// import { useState } from 'react';
+
 
 function Navigation() {
+const [navVisible, setNavVisisble] = useState(false)
+
+const toggleNavMenu = () => {
+  setNavVisisble(!navVisible);
+};
   return (
     <div className={classNamees.body}>
        <div className={classes.NavContainer}>
@@ -12,7 +19,8 @@ function Navigation() {
             {/* <div className="container-fluid" > */}
               <NavLink to={'/'} className="navbar-brand" href="#"><img src={Logo}/></NavLink>
               <div className={classes.MenuContainer}>
-                <ul className={classes.navMenu}>
+                <ul className={`${classes.navMenu} ${navVisible ? 'show' : ''}`}>
+                {/* <ul className={classes.navMenu}> */}
                   <li className="nav-item">
                     <NavLink to={'Landingpage'} className="nav-link active" aria-current="page" href="#">Home</NavLink>
                   </li>
@@ -28,7 +36,7 @@ function Navigation() {
                     <button type="button" className={classes.topNavButton}  ><NavLink to={'/SignUp'} >Sign Up</NavLink></button>          
                 </ul>
               </div>
-              <button className={classes.navbarToggler} type="button">
+              <button className={classes.navbarToggler} onClick={toggleNavMenu} type="button">
                 <i className="fas fa-bars"></i>
               </button>
             {/* </div> */}
