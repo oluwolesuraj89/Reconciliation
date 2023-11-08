@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import classes from './Landingpage.module.css';
 import { NavLink } from 'react-router-dom';
+import Navigation  from '../Nav/Navigation';
 import Logo from '../../Images/Logo.png';
 import { Button } from 'bootstrap';
 import HeaderImg from '../../Images/SideImg.png';
@@ -20,20 +21,53 @@ import Feature2icon from '../../Images/Feature2icon2.png';
 import GroupedBackground from '../../Images/GroupedBackground.png';
 import wrappingLing1 from '../../Images/wrapingLine1.png';
 import wrappingLing2 from '../../Images/wrappingLine2.png';
+import Avater1 from '../../Images/Avatar1.png';
+import Avater2 from '../../Images/Avatar2.png';
+import Avater3 from '../../Images/Avatar3.png';
+
+
 
 // import HeaderDots from '../../Images/HeaderDots.png';
 
 function Landingpage() {
-    const [selected1, setSelected1] = useState(null);
-    const [selected2, setSelected2] = useState(null);
+    const [selected1, setSelected1] = useState(-1);
+    // const [selected2, setSelected2] = useState(null);
 
     const toggle1 = (i) => {
       if (selected1 === i) {
-          setSelected1(null);
+          setSelected1(-1);
       } else {
           setSelected1(i);
       }
   };
+
+  
+const data1 = [
+  {
+      question: 'How the system works',
+      answer: 'Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.',
+  },
+  {
+      question: 'Can I change my plan later?',
+      answer: 'Gateway Trading Company has secured an office at the Tech Hub building located at Kobape, Abeokuta-Sagamu expressway to support its administrative operations.',
+  },
+  {
+      question: 'What is your cancellation policy?',
+      answer: 'Gateway Trading Company has secured an office at the Tech Hub building located at Kobape, Abeokuta-Sagamu expressway to support its administrative operations.',
+  },
+  {
+      question: 'Can other info be added to an invoice?',
+      answer: 'Gateway Trading Company has secured an office at the Tech Hub building located at Kobape, Abeokuta-Sagamu expressway to support its administrative operations.',
+  },
+  {
+      question: 'How does billing work?',
+      answer: 'Gateway Trading Company has secured an office at the Tech Hub building located at Kobape, Abeokuta-Sagamu expressway to support its administrative operations.',
+  },
+  {
+      question: 'How do I change my account email?',
+      answer: 'Gateway Trading Company has secured an office at the Tech Hub building located at Kobape, Abeokuta-Sagamu expressway to support its administrative operations.',
+  },
+];
 
   // const toggle2 = (i) => {
   //     if (selected2 === i) {
@@ -46,17 +80,13 @@ function Landingpage() {
 
   return (
     <div className={classes.body}>
-        <div className={classes.main}>
-          <nav className="navbar navbar-expand-lg bg-body-tertiary">
-            <div className="container-fluid">
+      <Navigation/>
+        {/* <div className={classes.NavContainer}>
+          <nav className={classes.Navbar}>
+            
               <NavLink to={'/'} className="navbar-brand" href="#"><img src={Logo}/></NavLink>
-
-              <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-              </button>
-
-              <div className="collapse navbar-collapse" id="navbarNav">
-                <ul className="navbar-nav">
+              <div className={classes.MenuContainer}>
+                <ul className={classes.navMenu}>
                   <li className="nav-item">
                     <NavLink className="nav-link active" aria-current="page" href="#">Home</NavLink>
                   </li>
@@ -69,12 +99,15 @@ function Landingpage() {
                   <li className="nav-item">
                     <NavLink className="nav-link" >Pricing</NavLink>
                   </li>
-                  <button type="button" className="btn "><NavLink className="nav-link disabled" aria-disabled="true">Sign Up</NavLink></button>          
+                    <button type="button" className={classes.topNavButton}  ><NavLink >Sign Up</NavLink></button>          
                 </ul>
               </div>
-            </div>
+              <button className={classes.navbarToggler} type="button">
+                <i className="fas fa-bars"></i>
+              </button>
+            
           </nav>
-        </div>
+        </div> */}
         <div className={classes.header}>
           <div className="container-fluid">
             <div className="row">
@@ -210,7 +243,7 @@ function Landingpage() {
           </div>
         </div>
         <div className={classes.section6}>
-          <div className="container-fluid main">
+          <div className={classes.main}>
            <div className={classes.mainBrands}>
               <img src={Syn} alt='Syn'/>
               <h6>Sysphus</h6>
@@ -224,10 +257,10 @@ function Landingpage() {
           </div>
         </div>
         <div className={classes.section7}>
-          <div className="container-fluid main">
-            <h6>Features</h6>
+          <div className={classes.main}>
+            <h6 className={classes.h6}>Features</h6>
             <h2>WHAT MAKES PROMIX RECONCILIATION SYSTEM SPECIAL?</h2>
-            <p>Our pricing is flexible and tailored to your business size. Get in touch for a personalized quote, or try our system for free with a 30-day trial!</p>
+            <p className={classes.p}>Our pricing is flexible and tailored to your business size. Get in touch for a personalized quote, or try our system for free with a 30-day trial!</p>
             <div className={classes.features}>
               <div className={classes.firstFeatures}>
                 <div className={classes.FeaturesCont1}>
@@ -265,22 +298,22 @@ function Landingpage() {
           </div>
         </div>
         <div className={classes.section8}>
+          <div className={classes.main}>
           <div className={classes.FAQs}>
             <h3>Frequently asked questions</h3>
             <p>Everything you need to know about the product and billing.</p>
             <div className='faq-cont'>
-              <h1>Frequently Asked Questions</h1>
               <div className='questions-cont'>
                   <div className='accordion'>
                       {data1.map((items, i) => (
-                          <div className='items' onClick={() => toggle1(i)}>
-                              <div className='accordion-title'>
+                          <div className={classes.items} key={i} onClick={() => toggle1(i)}>
+                              <div className={classes.accordionTitle}>
                                   <h4>{items.question}</h4>
                                   <span>{selected1 === i ? <i className='bx bx-minus-circle'></i> : <i className='bx bx-plus-circle'></i>}</span>
                               </div>
-                              <div className={selected1 === i ? 'content.show' : 'content'}>
+                              {/* <div className={selected1 === i ? 'content.show' : 'content'}>
                                   {items.answer}
-                              </div>
+                              </div> */}
                           </div>
                       ))}
                   </div>
@@ -289,66 +322,74 @@ function Landingpage() {
             <div className={classes.moreQuestions}>
               <div className={classes.imgGroup}>
                 <div className={classes.profileImg}>
-                  <img src={ProfileImg} alt='ProfileImg'/>
+                  <img src={Avater1} alt='Avater1'/>
                 </div>
                 <div className={classes.profileImg}>
-                  <img src={ProfileImg} alt='ProfileImg'/>
+                  <img src={Avater3} alt='Avater3'/>
                 </div>
                 <div className={classes.profileImg}>
-                  <img src={ProfileImg} alt='ProfileImg'/>
+                  <img src={Avater2} alt='Avater2' className={classes.imgup}/>
                 </div>
               </div>
-               <h6>Still have questions?</h6>
-               <p>Can’t find the answer you’re looking for? Please chat to our friendly team.</p>
-               <button type="button" className="btn" id='SignUp'>Get in touch</button>
+              <div className={classes.morequz}>
+                <h5>Still have questions?</h5>
+                <p>Can’t find the answer you’re looking for? Please chat to our friendly team.</p>
+              </div>
+              <button className={classes.signUp}>Get in touch</button>
             </div>
+          </div>
           </div>
         </div>
         <div className={classes.section9}>
           <div className={classes.main}>
             <h3>START A FREE TRIAL TODAY!</h3>
             <p>Unlock the potential of your financial control with our Automatic Reconciliation System. Say goodbye to manual reconciliation headaches and hello to a more efficient and accurate financial future. Start your journey to financial accuracy today!</p>        
-            <button type="button" className="btn" id='SignUp'>Get in touch</button>
-            <button type="button" className="btn" id='SignUp'>Get in touch</button>
+            <div className={classes.groupbtns }>
+              <button className={classes.demo}><i class='bx bx-play-circle'></i> Demo </button>
+              <button className={classes.signUp}>Sign Up</button>
+            </div>
           </div>
         </div>
         <footer>
           <div className={classes.container}>
-            <span>
-              <img src={Logo} alt='logo'/>
+            <span className={classes.copyright}>
+              <img src={Logo} alt='logo' className={classes.logo}/>
               <p>Copyright © 2023 Eazipay.</p>
               <p>All rights reserved</p>
-              <icons>
-                <i>fa</i>
-                <i>fa</i>
-                <i>fa</i>
-                <i>fa</i>
+              <icons className={classes.icons}>
+                <span><i class='bx bxl-instagram'></i></span>
+                <span><i class='bx bxl-twitter'></i></span>
+                <span><i class='bx bxl-linkedin'></i></span>
+                <span><i class='bx bxl-facebook'></i></span>
               </icons>
             </span>
             <div className={classes.footerFlex}>
-              <span>
+              <span className={classes.span}>
                 <h5>Product</h5>
-                <p>Businesses</p>
-                <p>Request Demo</p>
-                <p>Pricing</p>
+                <NavLink to ={'#'}>Businesses</NavLink>
+                <NavLink to ={'#'}>Request Demo</NavLink>
+                <NavLink to ={'#'}>Pricing</NavLink>
+                
               </span>
-              <span>
+              <span className={classes.span}>
                 <h5>Legal</h5>
-                <p>Privacy Policy</p>
-                <p>Terms of Service</p>
+                <NavLink to ={'#'}>Privacy Policy</NavLink>
+                <NavLink to ={'#'}>Terms of Service</NavLink>
+                
               </span>
-              <span>
+              <span className={classes.span}>
                 <h5>Resources</h5>
-                <p>FAQs</p>
-                <p>Blog</p>
-                <p>Career</p>
-                <p>Customer Stories</p>
+                <NavLink to ={'#'}>FAQs</NavLink>
+                <NavLink to ={'#'}>Blog</NavLink>
+                <NavLink to ={'#'}>Career</NavLink>
+                <NavLink to ={'#'}>Customer Stories</NavLink>
+                
               </span>
-              <span>
+              <span className={classes.span}>
                 <h5>Contact us</h5>
                 <p>eazipay@gmail.com</p>
                 <p>+234 816 878 9518</p>
-                <p>
+                <p className={classes.emaildetails}>
                   Your email address
                   <i>icon</i>
                 </p>
@@ -363,32 +404,6 @@ function Landingpage() {
 export default Landingpage
 
 
-const data1 = [
-  {
-      question: 'HOW THE SYSTEM WORKS',
-      answer: 'Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.',
-  },
-  {
-      question: 'Can I change my plan later?',
-      answer: 'Gateway Trading Company has secured an office at the Tech Hub building located at Kobape, Abeokuta-Sagamu expressway to support its administrative operations.',
-  },
-  {
-      question: 'What is your cancellation policy?',
-      answer: 'Gateway Trading Company has secured an office at the Tech Hub building located at Kobape, Abeokuta-Sagamu expressway to support its administrative operations.',
-  },
-  {
-      question: 'Can other info be added to an invoice?',
-      answer: 'Gateway Trading Company has secured an office at the Tech Hub building located at Kobape, Abeokuta-Sagamu expressway to support its administrative operations.',
-  },
-  {
-      question: 'How does billing work?',
-      answer: 'Gateway Trading Company has secured an office at the Tech Hub building located at Kobape, Abeokuta-Sagamu expressway to support its administrative operations.',
-  },
-  {
-      question: 'How do I change my account email?',
-      answer: 'Gateway Trading Company has secured an office at the Tech Hub building located at Kobape, Abeokuta-Sagamu expressway to support its administrative operations.',
-  },
-];
 
 // const data2 = [
 //   {
