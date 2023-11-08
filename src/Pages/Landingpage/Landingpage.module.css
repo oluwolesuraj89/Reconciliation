@@ -78,9 +78,9 @@ h1, h2, h3, h4, h5, h6{
   border-radius: 8px;
   background-color: #7F56D9;
 }
-.groupbtns{
+.groupbtns,
+.headerGroupbtns{
   display: flex;
-  /* justify-content: center; */
   align-items: center;
 }
 .demo{
@@ -146,9 +146,9 @@ h1, h2, h3, h4, h5, h6{
   line-height: 24px; 
 }
 .BrandsContainer{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(5, 2fr);
 }
 .mainBrands img:hover{
   transform: scale(1.08);
@@ -485,92 +485,77 @@ h1, h2, h3, h4, h5, h6{
   text-align: center;
   padding: 15px 0 40px 0;
 }
-footer{
-  display: flex;
-  width: 100%;
-  padding: 64px 152px;
-  /* align-items: center; */
-  gap: 125px;
-  background-color: white;
-}
-footer .container{
-  display: flex;
-  justify-content: flex-start;
-  /* align-items: center; */
-  max-width: 1512px;
-  width: 100%;
-  gap: 125px;
-}
-footer .footerFlex{
-  display: flex;
-  justify-content: space-between;
-  /* align-items: center; */
-  gap: 50px;
-  /* max-width: 1512px; */
-  /* width: 100%; */
-}
-footer  .logo{
-  padding-bottom: 24px;
-  /* display: none; */
-}
-footer .span{
-  display: flex;
-  flex-direction: column;
-}
-footer .footerFlex h5{
-  color: var(--new-styles-text-heading, #292A29);
-  font-size: 20px;
-  font-weight: 600;
-  letter-spacing: 0.2px;
-  padding-bottom: 24px;
-}
-footer .copyright p{
-  font-size: 14px;
-  margin: 0;
-}
-footer p{
-  color: #7C7C7C;
-  font-size: 16px;
-  line-height: 24px; 
-}
-footer .icons{
-  display: flex;
-  justify-content: flex-start;
-  gap: 10px;
-  align-items: center;
-  padding-top: 24px;
-}
-footer .icons span{
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 25px;
-  height: 25px;
-  padding: 10px;
-  background-color: #F2F1F1;
-  transition: ease 0.3s;
-}
-footer .icons span:hover{
-  background-color: var(--purple);
-  color: white;
-}
-footer a {
-  text-decoration: none;
-  color: #7C7C7C;
-  font-size: 16px;
-}
-footer a:hover {
-  color: var(--deep-blue);
-  font-weight: 600;
-}
-footer .emaildetails{
-  width: 255px;
-  padding: 10px  20px;
-  /* height: 40px; */
-  border-radius: 16px;
-  background-color: #F2F1F1;
-  /* flex-shrink: 0; */
-}
 
+@media(max-width:800px){
+  .body{
+    padding: 0 15px;
+  }
+  .body, .main{
+    width: 100%;
+    overflow: hidden;
+  }
+  .header{
+    background-image: none;
+    padding-top: 24px;
+    position: relative;
+  }
+  .header h1{
+    font-size: 50px;
+    font-family: Nunito2;
+    text-align: center;
+    width: 100%;
+    line-height: 60px;
+  }
+  .header p{
+    font-size: 14px;
+    line-height: normal;
+    letter-spacing: -0.21px;
+    text-align: center;
+    margin-top: 32px;
+  }
+  .headerGroupbtns{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -50px;
+  }
+  .demo{
+    padding: 16px 28px;
+    background-color: white;
+    border: 1px solid #D0D5DD;
+    color: #344054;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    transition: ease 0.3s;
+  }
 
+  .signUp{
+    padding: 16px 28px;
+    background-color: #7F56D9;
+    border: 1px solid #7F56D9;
+    color: white;
+    border-radius: 8px;
+    margin-left: 12px;
+    font-size: 18px;
+    transition: ease 0.3s;
+  }
+
+  .headerImg{
+    width: 337px;
+    height: 307px;
+  }
+  .headerImg:hover, 
+  .resonForReonContentsImg img:hover{
+    transform: scale(1.05);
+  }
+  /* .headerImg img{
+    object-fit: cover;
+    width: 100%;
+    overflow: hidden;
+  } */
+  
+  }

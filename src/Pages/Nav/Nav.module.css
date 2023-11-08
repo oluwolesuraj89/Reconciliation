@@ -103,6 +103,9 @@
   
   .navbarToggler{
     display: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
   }
   @media(max-width:800px){
     .body, .main{

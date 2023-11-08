@@ -24,6 +24,7 @@ import wrappingLing2 from '../../Images/wrappingLine2.png';
 import Avater1 from '../../Images/Avatar1.png';
 import Avater2 from '../../Images/Avatar2.png';
 import Avater3 from '../../Images/Avatar3.png';
+import Footer from '../../Footer/Footer';
 
 
 
@@ -114,7 +115,7 @@ const data1 = [
               <div className="col-sm">
                 <h1><span>Promix</span> reconciliation system</h1>
                 <p>Unlock Seamless Financial Control with Our Automatic Reconciliation System</p>
-                <div className={classes.groupbtns }>
+                <div className={classes.headerGroupbtns }>
                   <button className={classes.demo}><i class='bx bx-play-circle'></i> Demo </button>
                   <button className={classes.signUp}>Sign Up</button>
                 </div>
@@ -350,53 +351,7 @@ const data1 = [
             </div>
           </div>
         </div>
-        <footer>
-          <div className={classes.container}>
-            <span className={classes.copyright}>
-              <img src={Logo} alt='logo' className={classes.logo}/>
-              <p>Copyright © 2023 Eazipay.</p>
-              <p>All rights reserved</p>
-              <icons className={classes.icons}>
-                <span><i class='bx bxl-instagram'></i></span>
-                <span><i class='bx bxl-twitter'></i></span>
-                <span><i class='bx bxl-linkedin'></i></span>
-                <span><i class='bx bxl-facebook'></i></span>
-              </icons>
-            </span>
-            <div className={classes.footerFlex}>
-              <span className={classes.span}>
-                <h5>Product</h5>
-                <NavLink to ={'#'}>Businesses</NavLink>
-                <NavLink to ={'#'}>Request Demo</NavLink>
-                <NavLink to ={'#'}>Pricing</NavLink>
-                
-              </span>
-              <span className={classes.span}>
-                <h5>Legal</h5>
-                <NavLink to ={'#'}>Privacy Policy</NavLink>
-                <NavLink to ={'#'}>Terms of Service</NavLink>
-                
-              </span>
-              <span className={classes.span}>
-                <h5>Resources</h5>
-                <NavLink to ={'#'}>FAQs</NavLink>
-                <NavLink to ={'#'}>Blog</NavLink>
-                <NavLink to ={'#'}>Career</NavLink>
-                <NavLink to ={'#'}>Customer Stories</NavLink>
-                
-              </span>
-              <span className={classes.span}>
-                <h5>Contact us</h5>
-                <p>eazipay@gmail.com</p>
-                <p>+234 816 878 9518</p>
-                <p className={classes.emaildetails}>
-                  Your email address
-                  <i>icon</i>
-                </p>
-              </span>
-            </div>
-          </div>
-        </footer>
+        <Footer/>
       </div>
   )
 }
@@ -405,13 +360,3 @@ export default Landingpage
 
 
 
-// const data2 = [
-//   {
-//       question: 'Question 3',
-//       answer: 'Gateway Trading Company has secured an office at the Tech Hub building located at Kobape, Abeokuta-Sagamu expressway to support its administrative operations.',
-//   },
-//   {
-//       question: 'Question 4',
-//       answer: 'Gateway Trading Company has secured an office at the Tech Hub building located at Kobape, Abeokuta-Sagamu expressway to support its administrative operations.',
-//   },
-// ];
