@@ -354,7 +354,7 @@ const data1 = [
           <div className={classes.container}>
             <span className={classes.copyright}>
               <img src={Logo} alt='logo' className={classes.logo}/>
-              <p>Copyright © 2023 Eazipay.</p>
+              <p>Copyright © 2023 Promix.</p>
               <p>All rights reserved</p>
               <icons className={classes.icons}>
                 <span><i class='bx bxl-instagram'></i></span>
@@ -387,7 +387,7 @@ const data1 = [
               </span>
               <span className={classes.span}>
                 <h5>Contact us</h5>
-                <p>eazipay@gmail.com</p>
+                <p>promix@gmail.com</p>
                 <p>+234 816 878 9518</p>
                 <p className={classes.emaildetails}>
                   Your email address

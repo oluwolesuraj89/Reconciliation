@@ -12,7 +12,7 @@
   }
   
 * {
-overflow-x: 0%;
+overflow-x: none;
 max-width: 100%;
 }
 .pricingHero {
@@ -21,8 +21,8 @@ max-width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     /* background-position: center; */
-    width: 100%;
-    max-width: 1500px;
+    /* width: 100%; */
+    max-width: 100%;
     height: 100%;
     position: relative;
     display: flex;
@@ -122,18 +122,18 @@ max-width: 100%;
     border-radius: 16px;
     z-index: 8;
     top: 107%;
-    /* right: 75%; */
+    
     transform: translate(-0.005%, -75%);
-    /* margin-left: 180px; */
+   
     box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.132), 0 8px 25px 0 rgba(0, 0, 0, 0.027);
-   margin-right: 5px;
-   margin-left: 5px;
+   margin-right: 15px;
+   margin-left: 15px;
 }
 
 .myh1{
     padding-top: 40px;
     font-weight: 600;
-    font-size: 48px;
+    font-size: 40px;
 }
 
 .myp {
@@ -159,8 +159,7 @@ max-width: 100%;
 
 .mysubp {
     text-align: left;
-    margin-left: 35px;
-    
+    margin-left: 35px; 
 }
 
 .myhp {
@@ -183,5 +182,30 @@ max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /* flex-wrap: wrap; */
+   
+}
+
+.mostpop {
+font-weight: 500;
+font-size: 14px;
+color:#7F56D9 ;
+z-index: 20;
+position: absolute;
+right: 65%;
+top: 12%;
+display: flex;
+
+}
+
+p .mostpop {
+margin-bottom: 15px;
+}
+
+.Handdrawn {
+    width: 61.96px;
+    height: 30px; 
+}
+
+.pricing {
+    position: relative;
 }

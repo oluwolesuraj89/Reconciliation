@@ -5,6 +5,7 @@ import arrowRight from '../../Images/arrow-right.png'
 import Demo from '../../Images/Icon.png'
 import Body from '../../Images/body-bg.png'
 import Check from '../../Images/Check-icon.png'
+import Handdrawn from '../../Images/Hand-drawn-arrow.png'
 
 
 function Pricing() {
@@ -27,11 +28,13 @@ function Pricing() {
                                 </div>
                         </div>
 
-                        <div>
+                        <div className={classes.pricing}>
                                 <div>
                                         <img src={Body} className={classes.bodybg} alt="bodybg" />
                                 </div>
-
+                                <div>
+                                <p className={classes.mostpop}><img src={Handdrawn} className={classes.Handdrawn} alt="handdrawn-icon" />Most popular!</p>
+                                </div>
                                 <div className={classes.pricingcards}>
                                         <div className={classes.basic}>
                                                 <h1 className={classes.myh1}>₦0/mth</h1>
@@ -44,10 +47,10 @@ function Pricing() {
                                                         <p className={classes.mysubp}><img src={Check} className={classes.Check} alt="Check-icon" />Reconciliation Report PDF</p>
                                                         <p className={classes.mysubp}><img src={Check} className={classes.Check} alt="Check-icon" />Outstanding Items Report</p>
                                                 </div>
-                                                <button className={classes.mibtn}>Sign Up Free</button>
+                                                <button className={classes.mibtn}>Sign Up </button>
                                         </div>
 
-                                        <div className={classes.basic}>
+                                        <div className={classes.basic }>
                                                 <h1 className={classes.myh1}>₦5,000/mth</h1>
                                                 <p className={classes.myp} >Standard plan</p>
                                                 <p className={classes.my2p} >Use For Personal.</p>
