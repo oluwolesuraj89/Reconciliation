@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import classes from './Landingpage.module.css';
+import Accordion from 'react-bootstrap/Accordion';
 import { NavLink } from 'react-router-dom';
 import Navigation  from '../Nav/Navigation';
 import Logo from '../../Images/Logo.png';
@@ -306,15 +307,44 @@ const data1 = [
             <div className='faq-cont'>
               <div className='questions-cont'>
                   <div className='accordion'>
+
+                  <Accordion defaultActiveKey="0" flush>
+      <Accordion.Item eventKey="0">
+        <Accordion.Header>Accordion Item #1</Accordion.Header>
+        <Accordion.Body>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="1">
+        <Accordion.Header>Accordion Item #2</Accordion.Header>
+        <Accordion.Body>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </Accordion.Body>
+      </Accordion.Item>
+    </Accordion>
+
+
                       {data1.map((items, i) => (
                           <div className={classes.items} key={i} onClick={() => toggle1(i)}>
                               <div className={classes.accordionTitle}>
                                   <h4>{items.question}</h4>
                                   <span>{selected1 === i ? <i className='bx bx-minus-circle'></i> : <i className='bx bx-plus-circle'></i>}</span>
                               </div>
-                              {/* <div className={selected1 === i ? 'content.show' : 'content'}>
+                              <div className={selected1 === i ? 'content.show' : 'content'}>
                                   {items.answer}
-                              </div> */}
+                              </div>
                           </div>
                       ))}
                   </div>
