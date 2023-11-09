@@ -7,11 +7,12 @@ import classes from '../Nav/Nav.module.css';
 
 
 function Navigation() {
-const [navVisible, setNavVisisble] = useState(false)
+    const [isNavMenuVisible, setNavMenuVisibility] = useState(false);
+  
+    const toggleNavMenu = () => {
+      setNavMenuVisibility(!isNavMenuVisible);  
+    }
 
-const toggleNavMenu = () => {
-  setNavVisisble(!navVisible);
-};
   return (
     <div className={classNamees.body}>
        <div className={classes.NavContainer}>
@@ -19,7 +20,7 @@ const toggleNavMenu = () => {
             {/* <div className="container-fluid" > */}
               <NavLink to={'/'} className="navbar-brand" href="#"><img src={Logo}/></NavLink>
               <div className={classes.MenuContainer}>
-                <ul className={`${classes.navMenu} ${navVisible ? 'show' : ''}`}>
+              <ul className={`${classes.navMenu} ${isNavMenuVisible ? 'show' : ''}`}>
                 {/* <ul className={classes.navMenu}> */}
                   <li className="nav-item">
                     <NavLink to={'Landingpage'} className="nav-link active" aria-current="page" href="#">Home</NavLink>
@@ -36,7 +37,7 @@ const toggleNavMenu = () => {
                     <button type="button" className={classes.topNavButton}  ><NavLink to={'/SignUp'} >Sign Up</NavLink></button>          
                 </ul>
               </div>
-              <button className={classes.navbarToggler} onClick={toggleNavMenu} type="button">
+               <button className={classes.navbarToggler} type="button" onClick={toggleNavMenu}>
                 <i className="fas fa-bars"></i>
               </button>
             {/* </div> */}

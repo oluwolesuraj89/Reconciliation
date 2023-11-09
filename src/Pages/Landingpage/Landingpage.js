@@ -178,7 +178,7 @@ const data1 = [
         </div>
         <div className={classes.section4}>
           <div className={classes.main}>
-            <h3>THIS APPLICATION IS FOR YOU IF YOUR ANSWER TO THESE QUESTIONS IS YES.</h3>
+            <h3>This application is for you if your answer to these questions is yes.</h3>
             <div className={classes.appForYouContent}>
               <div>
                 <img src={Email} alt='Email'/>
@@ -210,7 +210,7 @@ const data1 = [
         </div>
         <div className={classes.section5}>
           <div className={classes.main}>
-            <h3>Why YOU NEED PROMIX RECONCILIATION SYSTEM.</h3>
+            <h3>Why you need promix reconciliation system.</h3>
             <div className={classes.resonForRecon}>
               <div className={classes.resonForReonContents}>
                 <span>
@@ -260,7 +260,7 @@ const data1 = [
         <div className={classes.section7}>
           <div className={classes.main}>
             <h6 className={classes.h6}>Features</h6>
-            <h2>WHAT MAKES PROMIX RECONCILIATION SYSTEM SPECIAL?</h2>
+            <h2>What makes promix reconciliation system special?</h2>
             <p className={classes.p}>Our pricing is flexible and tailored to your business size. Get in touch for a personalized quote, or try our system for free with a 30-day trial!</p>
             <div className={classes.features}>
               <div className={classes.firstFeatures}>
@@ -298,7 +298,7 @@ const data1 = [
 
           </div>
         </div>
-        <div className={classes.section8}>
+      <div className={classes.section8}>
           <div className={classes.main}>
           <div className={classes.FAQs}>
             <h3>Frequently asked questions</h3>
@@ -343,11 +343,16 @@ const data1 = [
         </div>
         <div className={classes.section9}>
           <div className={classes.main}>
-            <h3>START A FREE TRIAL TODAY!</h3>
-            <p>Unlock the potential of your financial control with our Automatic Reconciliation System. Say goodbye to manual reconciliation headaches and hello to a more efficient and accurate financial future. Start your journey to financial accuracy today!</p>        
+            <h3>Start a free trial today!</h3>
+            <p className={classes.desktopP}>Unlock the potential of your financial control with our Automatic Reconciliation System. Say goodbye to manual reconciliation headaches and hello to a more efficient and accurate financial future. Start your journey to financial accuracy today!</p>        
+            <p className={classes.mobileP}>Join over 4,000+ startups already growing with Untitled.</p>
             <div className={classes.groupbtns }>
               <button className={classes.demo}><i class='bx bx-play-circle'></i> Demo </button>
               <button className={classes.signUp}>Sign Up</button>
+            </div>
+            <div className={classes.mobileBtns }>
+              <button className={classes.getStarted}>Get started </button>
+              <button className={classes.learnMore}>Learn more</button>
             </div>
           </div>
         </div>

@@ -2,6 +2,7 @@ import React from 'react'
 import classes from './Footer.module.css';
 import { NavLink } from 'react-router-dom';
 import Logo from '../Images/Logo.png';
+import Go from '../Images/Go.png'
 
 function Footer() {
   return (
@@ -22,6 +23,7 @@ function Footer() {
             <div className={classes.footerFlex}>
               <span className={classes.span}>
                 <h5>Product</h5>
+                <NavLink to ={'#'}>Individual</NavLink>
                 <NavLink to ={'#'}>Businesses</NavLink>
                 <NavLink to ={'#'}>Request Demo</NavLink>
                 <NavLink to ={'#'}>Pricing</NavLink>
@@ -47,7 +49,7 @@ function Footer() {
                 <p>+234 816 878 9518</p>
                 <p className={classes.emaildetails}>
                   Your email address
-                  <i>icon</i>
+                  <img src={Go} alt='Go'/>
                 </p>
               </span>
             </div>
