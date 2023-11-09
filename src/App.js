@@ -6,6 +6,8 @@ import AboutUs from './Pages/About/AboutUs';
 import Products from './Pages/Product/Product';
 import Navigation from './Pages/Nav/Navigation';
 import Home from './Pages/Home/Home';
+import Pricings from './Pages/Pricing/Pricing';
+import Signup from './Pages/SiginUp/SiginUp';
 
 
 
@@ -18,7 +20,8 @@ function App() {
         <Route path='/Landingpage'element={<Landingpage/>}/>
         <Route path='/AboutUs'element={<AboutUs/>}/>
         <Route path='/Products'element={<Landingpage/>}/>
-        <Route path='/Pricing'element={<Landingpage/>}/>
+        <Route path='/Signup'element={<Signup/>}/>
+        <Route path='/Pricings'element={<Pricings/>}/>
       </Routes>
     </>
   );
