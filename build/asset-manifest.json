@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.12d86276.css",
+    "main.js": "/static/js/main.e2acd5b4.js",
+    "static/js/787.0bcd4248.chunk.js": "/static/js/787.0bcd4248.chunk.js",
+    "static/media/SideImg.png": "/static/media/SideImg.7493004f740a1fb874d9.png",
+    "static/media/FeatureImg.png": "/static/media/FeatureImg.e4db4d7d80b665b0e580.png",
+    "static/media/Hero-Background.png": "/static/media/Hero-Background.99c4c2ff552ad39e41eb.png",
+    "static/media/background.png": "/static/media/background.e518b497e49b8220aba1.png",
+    "static/media/Nunito-Italic-VariableFont_wght.ttf": "/static/media/Nunito-Italic-VariableFont_wght.749b59811ed46de3c015.ttf",
+    "static/media/Nunito-VariableFont_wght.ttf": "/static/media/Nunito-VariableFont_wght.c0f0807a40aebdc41b40.ttf",
+    "static/media/body-bg.png": "/static/media/body-bg.54ab47ddffaf5568b225.png",
+    "static/media/mockuppromix.png": "/static/media/mockuppromix.aa483c9aa7e8b32eefa1.png",
+    "static/media/Millik.ttf": "/static/media/Millik.c3f91cbb812b1cf89b80.ttf",
+    "static/media/GroupedBackground.png": "/static/media/GroupedBackground.38b733a0d60e71428967.png",
+    "index.html": "/index.html",
+    "main.12d86276.css.map": "/static/css/main.12d86276.css.map",
+    "main.e2acd5b4.js.map": "/static/js/main.e2acd5b4.js.map",
+    "787.0bcd4248.chunk.js.map": "/static/js/787.0bcd4248.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.12d86276.css",
+    "static/js/main.e2acd5b4.js"
+  ]
+}
