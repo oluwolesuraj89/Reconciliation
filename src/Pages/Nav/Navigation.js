@@ -23,7 +23,7 @@ function Navigation() {
                     <NavLink to={'/Product'} className="nav-link" href="#">product</NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink to={'/Pricing'} className="nav-link" >Pricing</NavLink>
+                    <NavLink to={'/Pricings'} className="nav-link" >Pricing</NavLink>
                   </li>
                     <button type="button" className={classes.topNavButton}  ><NavLink to={'/SignUp'} >Sign Up</NavLink></button>          
                 </ul>
