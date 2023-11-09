@@ -24,6 +24,7 @@ import wrappingLing2 from '../../Images/wrappingLine2.png';
 import Avater1 from '../../Images/Avatar1.png';
 import Avater2 from '../../Images/Avatar2.png';
 import Avater3 from '../../Images/Avatar3.png';
+import Footer from '../../Footer/Footer';
 
 
 
@@ -114,7 +115,7 @@ const data1 = [
               <div className="col-sm">
                 <h1><span>Promix</span> reconciliation system</h1>
                 <p>Unlock Seamless Financial Control with Our Automatic Reconciliation System</p>
-                <div className={classes.groupbtns }>
+                <div className={classes.headerGroupbtns }>
                   <button className={classes.demo}><i class='bx bx-play-circle'></i> Demo </button>
                   <button className={classes.signUp}>Sign Up</button>
                 </div>
@@ -177,7 +178,7 @@ const data1 = [
         </div>
         <div className={classes.section4}>
           <div className={classes.main}>
-            <h3>THIS APPLICATION IS FOR YOU IF YOUR ANSWER TO THESE QUESTIONS IS YES.</h3>
+            <h3>This application is for you if your answer to these questions is yes.</h3>
             <div className={classes.appForYouContent}>
               <div>
                 <img src={Email} alt='Email'/>
@@ -209,7 +210,7 @@ const data1 = [
         </div>
         <div className={classes.section5}>
           <div className={classes.main}>
-            <h3>Why YOU NEED PROMIX RECONCILIATION SYSTEM.</h3>
+            <h3>Why you need promix reconciliation system.</h3>
             <div className={classes.resonForRecon}>
               <div className={classes.resonForReonContents}>
                 <span>
@@ -259,7 +260,7 @@ const data1 = [
         <div className={classes.section7}>
           <div className={classes.main}>
             <h6 className={classes.h6}>Features</h6>
-            <h2>WHAT MAKES PROMIX RECONCILIATION SYSTEM SPECIAL?</h2>
+            <h2>What makes promix reconciliation system special?</h2>
             <p className={classes.p}>Our pricing is flexible and tailored to your business size. Get in touch for a personalized quote, or try our system for free with a 30-day trial!</p>
             <div className={classes.features}>
               <div className={classes.firstFeatures}>
@@ -297,7 +298,7 @@ const data1 = [
 
           </div>
         </div>
-        <div className={classes.section8}>
+      <div className={classes.section8}>
           <div className={classes.main}>
           <div className={classes.FAQs}>
             <h3>Frequently asked questions</h3>
@@ -342,8 +343,9 @@ const data1 = [
         </div>
         <div className={classes.section9}>
           <div className={classes.main}>
-            <h3>START A FREE TRIAL TODAY!</h3>
-            <p>Unlock the potential of your financial control with our Automatic Reconciliation System. Say goodbye to manual reconciliation headaches and hello to a more efficient and accurate financial future. Start your journey to financial accuracy today!</p>        
+            <h3>Start a free trial today!</h3>
+            <p className={classes.desktopP}>Unlock the potential of your financial control with our Automatic Reconciliation System. Say goodbye to manual reconciliation headaches and hello to a more efficient and accurate financial future. Start your journey to financial accuracy today!</p>        
+            <p className={classes.mobileP}>Join over 4,000+ startups already growing with Untitled.</p>
             <div className={classes.groupbtns }>
               <button className={classes.demo}><i class='bx bx-play-circle'></i> Demo </button>
               <button className={classes.signUp}>Sign Up</button>
@@ -354,7 +356,7 @@ const data1 = [
           <div className={classes.container}>
             <span className={classes.copyright}>
               <img src={Logo} alt='logo' className={classes.logo}/>
-              <p>Copyright © 2023 Promix.</p>
+              <p>Copyright © 2023 Eazipay.</p>
               <p>All rights reserved</p>
               <icons className={classes.icons}>
                 <span><i class='bx bxl-instagram'></i></span>
@@ -387,7 +389,7 @@ const data1 = [
               </span>
               <span className={classes.span}>
                 <h5>Contact us</h5>
-                <p>promix@gmail.com</p>
+                <p>eazipay@gmail.com</p>
                 <p>+234 816 878 9518</p>
                 <p className={classes.emaildetails}>
                   Your email address
@@ -396,7 +398,8 @@ const data1 = [
               </span>
             </div>
           </div>
-        </footer>
+        </div>
+        <Footer/>
       </div>
   )
 }
@@ -405,13 +408,3 @@ export default Landingpage
 
 
 
-// const data2 = [
-//   {
-//       question: 'Question 3',
-//       answer: 'Gateway Trading Company has secured an office at the Tech Hub building located at Kobape, Abeokuta-Sagamu expressway to support its administrative operations.',
-//   },
-//   {
-//       question: 'Question 4',
-//       answer: 'Gateway Trading Company has secured an office at the Tech Hub building located at Kobape, Abeokuta-Sagamu expressway to support its administrative operations.',
-//   },
-// ];
